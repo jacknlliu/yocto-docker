@@ -9,6 +9,6 @@ build-essential chrpath socat libsdl1.2-dev xterm cpio file
 # install FASTRTPS dependencies
 RUN apt-get install -q -y  --no-install-recommends libboost-all-dev cmake
 
-RUN useradd -m yocto
+RUN adduser -m --disabled-password yocto
 
 USER yocto
