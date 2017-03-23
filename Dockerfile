@@ -13,6 +13,10 @@ build-essential chrpath socat libsdl1.2-dev xterm cpio file
 # install FASTRTPS dependencies
 RUN apt-get install -q -y  --no-install-recommends libboost-all-dev cmake
 
+
+# install basic tools
+RUN apt-get install -q -y  --no-install-recommends vim
+
 # setup sudoers
 RUN apt-get install -q -y --no-install-recommends sudo
 
